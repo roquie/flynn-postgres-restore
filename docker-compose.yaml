@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  db:
+    image: roquie/flynn-postgres-restore:9.5
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: flynn
+      POSTGRES_DB: database_hash
+    volumes:
+      - ./flynn-db:/var/lib/postgresql/data
+
+
