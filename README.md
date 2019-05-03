@@ -28,7 +28,7 @@ flynn-db/
 ├── pg_replslot
 ├── pg_serial
 ```
-4) Run `docker-compose up`
+4) Run `docker-compose up` (before needs to edit env variables)
 5) Connect to database and use your credentials to dump sql.
 
 Database recovered. Fine!
